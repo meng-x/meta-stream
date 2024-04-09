@@ -22,14 +22,14 @@
     <div id="log">
 		
 	</div>
-	<video id="video_player" width="40%" controls autoplay muted></video>
+	<!-- <video id="video_player" width="40%" controls autoplay muted></video> -->
   </div>
 </body>
 <script type="text/javascript" charset="utf-8">
 
 	$(document).ready(function() {
-	  var host = window.location.hostname
-	  var ws = new WebSocket("ws://"+host+":8000/humanecho");
+	  var host = "35.216.81.69"; //window.location.hostname
+	  var ws = new WebSocket("ws://"+host+":8111/humanecho");
 	  //document.getElementsByTagName("video")[0].setAttribute("src", aa["video"]);
 	  ws.onopen = function() {
 		console.log('Connected');
@@ -46,10 +46,10 @@
 		console.log('Closed');
 	  };
 
-	  flvPlayer = mpegts.createPlayer({type: 'flv', url: "http://"+host+":8080/live/livestream.flv", isLive: true, enableStashBuffer: false});
-	  flvPlayer.attachMediaElement(document.getElementById('video_player'));
-	  flvPlayer.load();
-	  flvPlayer.play();
+	//   flvPlayer = mpegts.createPlayer({type: 'flv', url: "http://"+host+":8080/live/livestream.flv", isLive: true, enableStashBuffer: false});
+	//   flvPlayer.attachMediaElement(document.getElementById('video_player'));
+	//   flvPlayer.load();
+	//   flvPlayer.play();
 
 	  $('#echo-form').on('submit', function(e) {
 		e.preventDefault();

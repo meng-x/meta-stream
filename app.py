@@ -336,7 +336,7 @@ if __name__ == '__main__':
     #############################################################################
     print('start websocket server')
 
-    server = pywsgi.WSGIServer(('0.0.0.0', 8000), app, handler_class=WebSocketHandler)
+    server = pywsgi.WSGIServer(('0.0.0.0', 8111), app, handler_class=WebSocketHandler)
     server.serve_forever()
     
     
