@@ -28,7 +28,7 @@
 <script type="text/javascript" charset="utf-8">
 
 	$(document).ready(function() {
-	  var host = window.location.hostname
+	  var host = "35.216.81.69"; //window.location.hostname
 	  var ws = new WebSocket("ws://"+host+":8111/humanchat");
 	  //document.getElementsByTagName("video")[0].setAttribute("src", aa["video"]);
 	  ws.onopen = function() {

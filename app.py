@@ -36,17 +36,17 @@ global gspeaker
 async def main(voicename: str, text: str, render):
     communicate = edge_tts.Communicate(text, voicename)
 
-    #with open(OUTPUT_FILE, "wb") as file:
-    first = True
-    async for chunk in communicate.stream():
-        if first:
-            #render.before_push_audio()
-            first = False
-        if chunk["type"] == "audio":
-            render.push_audio(chunk["data"])
-            #file.write(chunk["data"])
-        elif chunk["type"] == "WordBoundary":
-            pass                
+    with open("tts_output.wav", "wb") as file:
+        first = True
+        async for chunk in communicate.stream():
+            if first:
+                #render.before_push_audio()
+                first = False
+            if chunk["type"] == "audio":
+                render.push_audio(chunk["data"])
+                file.write(chunk["data"])
+            elif chunk["type"] == "WordBoundary":
+                pass                
 
 def get_speaker(ref_audio,server_url):
     files = {"wav_file": ("reference.wav", open(ref_audio, "rb"))}
