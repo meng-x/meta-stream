@@ -1,0 +1,57 @@
+[INFO] Trainer: ngp | 2024-04-14_22-51-18 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[WARN] missing keys: ['individual_codes_torso', 'anchor_points', 'density_grid_torso', 'torso_deform_net.net.0.weight', 'torso_deform_net.net.1.weight', 'torso_deform_net.net.2.weight', 'torso_encoder.embeddings', 'torso_encoder.offsets', 'torso_net.net.0.weight', 'torso_net.net.1.weight', 'torso_net.net.2.weight']
+[INFO] load at epoch 35, global step 126385
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-14_22-52-50 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-14_23-03-12 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-15_07-45-20 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-15_08-05-08 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-15_08-31-31 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.
+[INFO] Trainer: ngp | 2024-04-15_08-37-30 | cuda | fp16 | data/video
+[INFO] #parameters: 1789121
+[INFO] Loading data/pretrained/ngp_kf.pth ...
+[INFO] loaded model.
+[INFO] load at epoch 56, global step 202216
+[WARN] Failed to load optimizer.
+[INFO] loaded scheduler.
+[INFO] loaded scaler.

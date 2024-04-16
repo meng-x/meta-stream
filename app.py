@@ -88,7 +88,7 @@ def stream_xtts(audio_stream,render):
 
 def txt_to_audio(text_):
     if tts_type == "edgetts":
-        voicename = "zh-CN-YunxiaNeural"
+        voicename = "zh-CN-YunxiNeural"
         text = text_
         t = time.time()
         asyncio.get_event_loop().run_until_complete(main(voicename,text,nerfreal))
@@ -252,6 +252,7 @@ if __name__ == '__main__':
     parser.add_argument('--asr_wav', type=str, default='', help="load the wav and use as input")
     parser.add_argument('--asr_play', action='store_true', help="play out the audio")
 
+    #parser.add_argument('--asr_model', type=str, default='')
     #parser.add_argument('--asr_model', type=str, default='deepspeech')
     parser.add_argument('--asr_model', type=str, default='cpierse/wav2vec2-large-xlsr-53-esperanto') #
     # parser.add_argument('--asr_model', type=str, default='facebook/wav2vec2-large-960h-lv60-self')
